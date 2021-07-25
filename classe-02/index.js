@@ -26,18 +26,7 @@ const alunos = [
 const { nome: nome0, idade: idade0, email: email0, curso: curso0 } = alunos[0];
 const { nome: nome1, idade: idade1, email: email1, curso: curso1 } = alunos[1];
 
-const alunosResumido = [{
-    nome: nome0,
-    idade: idade0,
-    email: email0,
-    curso: curso0
-},
-{
-    nome: nome1,
-    idade: idade1,
-    email: email1,
-    curso: curso1
-}];
+const alunosResumido = alunos.map(({ nome, idade, email, curso }) => ({ nome, idade, email, curso }))
 
 
 console.log(alunosResumido);
